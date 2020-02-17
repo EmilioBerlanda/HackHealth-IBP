@@ -32,4 +32,8 @@ Al terminar sabrás:
   <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/ibm-cloud-registro.png">
 </p>
 
+2. Despliega el servicio de Kubernetes, escoge el plan gratuito, pónle un nombre y pincha crear. _Tarda unos 30 min.
+<p align="center">
+  <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/kuber.gif">
+</p>
 
