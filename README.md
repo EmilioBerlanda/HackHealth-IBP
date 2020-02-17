@@ -28,3 +28,8 @@ Al terminar sabrás:
 
 1. Crea tu servicio de IBM Cloud 
 * Crea una cuenta en [IBM Cloud](https://cloud.ibm.com/registration?locale=es)
+<p align="center">
+  <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/ibm-cloud-registro.png">
+</p>
+
+
