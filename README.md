@@ -24,7 +24,7 @@ Al terminar sabrás:
 
 
 
-## Pasos
+## Pasos para desplegar IBP
 
 1. Crea tu servicio de IBM Cloud 
 * Crea una cuenta en [IBM Cloud](https://cloud.ibm.com/registration?locale=es)
@@ -32,8 +32,27 @@ Al terminar sabrás:
   <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/ibm-cloud-registro.png">
 </p>
 
-2. Despliega el servicio de Kubernetes, escoge el plan gratuito, pónle un nombre y pincha crear. _Tarda unos 30 min.
+2. Despliega el servicio de Kubernetes, escoge el plan gratuito, pónle un nombre y pincha crear. _Tarda unos 30 min_.
 <p align="center">
   <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/kuber.gif">
 </p>
+
+3. Creamos el servicio de [IBM Blockchain Platform]()
+<p align="center">
+  <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/ibp.gif">
+</p>
+
+* Pinchamos en Lanzar y nos aparecera la IBM Platform 
+
+<p align="center">
+  <img src="https://github.com/EmilioBerlanda/HackHealth-IBP/blob/master/Imagenes/ibpplatform.gif">
+</p>
+
+## Pasos para construir la red de Blockchain
+
+* **Importante**: La instalación de los elementos necesarios para montar la red es  **muy sencilla** con **IBP**. Dedícale un tiempo antes a pensar la arquitectura y cómo plasmar la realidad de la manera más funcional. _¿Qué organizaciones participan?, ¿qué actores existen en cada una de ellas y que roles adoptan?,_ **IBP** se basa en [Hyperledger Fabric](https://hyperledger-fabric.readthedocs.io/en/release-1.4/network/network.html) por lo que sería conveniente que dedicaras 15 minutos a leer como se organizan la redes.
+
+1. Crea
+
+
 
