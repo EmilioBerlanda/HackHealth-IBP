@@ -52,7 +52,8 @@ Al terminar sabrás:
 
 * **Importante**: La instalación de los elementos necesarios para montar la red es  **muy sencilla** con **IBP**. Dedícale un tiempo antes a pensar la arquitectura y cómo plasmar la realidad de la manera más funcional. _¿Qué organizaciones participan?, ¿qué actores existen en cada una de ellas y que roles adoptan?,_ **IBP** se basa en [Hyperledger Fabric](https://hyperledger-fabric.readthedocs.io/en/release-1.4/network/network.html) por lo que sería conveniente que dedicaras 15 minutos a leer como se organizan la redes.
 
-1. Construye la red.
+<<<<<<< HEAD
+## Construye la red.
 
 * _Nota: Esta parte del tutorial es una traducción del tutorial de [Horea Porutiu](https://github.com/horeaporutiu). Os recomiendo encarecidamente que le echéis un vistazo a su cuenta de GitHub y a su [canal de Youtube](https://www.youtube.com/channel/UCSQpzlNDZOUR3LAaGWNMovw)._
 
@@ -160,6 +161,9 @@ Al terminar sabrás:
   - Enter the name of the channel you just created. `mychannel` and click <b>Next</b>.
   - Select which peers you want to join the channel, click `Peer Org1` .
   - Click <b>Submit</b>.
+=======
+1. Crea
+>>>>>>> a4d6f95dafd4584dca3cd2d5de9612f567a7ebfe
 
 
 
