@@ -52,7 +52,7 @@ Al terminar sabrás:
 
 * **Importante**: La instalación de los elementos necesarios para montar la red es  **muy sencilla** con **IBP**. Dedícale un tiempo antes a pensar la arquitectura y cómo plasmar la realidad de la manera más funcional. _¿Qué organizaciones participan?, ¿qué actores existen en cada una de ellas y que roles adoptan?,_ **IBP** se basa en [Hyperledger Fabric](https://hyperledger-fabric.readthedocs.io/en/release-1.4/network/network.html) por lo que sería conveniente que dedicaras 15 minutos a leer como se organizan la redes.
 
-<<<<<<< HEAD
+
 ## Construye la red.
 
 * _Nota: Esta parte del tutorial es una traducción del tutorial de [Horea Porutiu](https://github.com/horeaporutiu). Os recomiendo encarecidamente que le echéis un vistazo a su cuenta de GitHub y a su [canal de Youtube](https://www.youtube.com/channel/UCSQpzlNDZOUR3LAaGWNMovw)._
@@ -63,7 +63,7 @@ Al terminar sabrás:
 
 ### Crea la primera organización y el punto de acceso a tu Blockchain
 
-* #### Crea tu CA del peer
+ #### Crea tu CA del peer
   - Click <b>Add Certificate Authority</b>.
   - Click <b>IBM Cloud</b> under <b>Create Certificate Authority</b> and <b>Next</b>.
   - Ponle un <b>Display name</b> of `Org1 CA`.  
@@ -72,13 +72,13 @@ Al terminar sabrás:
 
 
 
-* #### Usa la CA para registrar identidades
+ #### Usa la CA para registrar identidades
   - Selecciona la  <b>Org 1 CA</b> Certificate Authority que has creado.
   - Primero, registraremos un admin para nuestra organización "org1". Pincha en el botón <b>Register User</b>.  Da un <b>Enroll ID</b> de `org1admin`, y <b>Enroll Secret</b> de `org1adminpw`.  Pincha <b>Next</b>.  Selecciona <b>Type</b> para esta identidad como  `client` y selecciona `org1` en la lista. Dejaremos los campos <b>Maximum enrollments</b> y <b>Add Attributes</b> en blanco.
   - Repetiremos este proceso para crear la identidad del peer.Pincha enel botón <b>Register User</b>. Da un  <b>Enroll ID</b> de `peer1`, y <b>Enroll Secret</b> de `peer1pw`. Pincha <b>Next</b>.  Selecciona el <b>Type</b> para esta identidad como `peer` y selecciona `org1`. Dejaremos los campos <b>Maximum enrollments</b> y <b>Add Attributes</b> en blanco.
 
 
-* #### Crearemos la definicion del MSP de l organización
+ #### Crearemos la definicion del MSP de l organización
   - Navega hasta la pestaña <b>Organizations</b> y pincha <b>Create MSP definition</b>.
   - Enter the <b>MSP Display name</b> as `Org1 MSP` and an <b>MSP ID</b> of `org1msp`.
   - Under <b>Root Certificate Authority</b> details, specify the peer CA that we created `Org1 CA` as the root CA for the organization.
@@ -87,7 +87,7 @@ Al terminar sabrás:
 
 
 
-* Create a peer
+ #### Create a peer
   - On the <b>Nodes</b> page, click <b>Add peer</b>.
   - Click <b>IBM Cloud</b> under Create a new peer and <b>Next</b>.
   - Give your peer a <b>Display name</b> of `Peer Org1`.
@@ -100,7 +100,7 @@ Al terminar sabrás:
 
 ### Create the node that orders transactions
 
-* #### Create your orderer organization CA
+ #### Create your orderer organization CA
   - Click <b>Add Certificate Authority</b>.
   - Click <b>IBM Cloud</b> under <b>Create Certificate Authority</b> and <b>Next</b>.
   - Give it a unique <b>Display name</b> of `Orderer CA`.  
@@ -108,7 +108,7 @@ Al terminar sabrás:
 
 
 
-* #### Use your CA to register orderer and orderer admin identities
+ #### Use your CA to register orderer and orderer admin identities
   - In the <b>Nodes</b> tab, select the <b>Orderer CA</b> Certificate Authority that we created.
   - First, we will register an admin for our organization. Click on the <b>Register User</b> button.  Give an <b>Enroll ID</b> of `ordereradmin`, and <b>Enroll Secret</b> of `ordereradminpw`.  Click <b>Next</b>.  Set the <b>Type</b> for this identity as `client` and select `org1` from the affiliated organizations drop-down list. We will leave the <b>Maximum enrollments</b> and <b>Add Attributes</b> fields blank.
   - We will repeat the process to create an identity of the orderer. Click on the <b>Register User</b> button.  Give an <b>Enroll ID</b> of `orderer1`, and <b>Enroll Secret</b> of `orderer1pw`.  Click <b>Next</b>.  Set the <b>Type</b> for this identity as `peer` and select `org1` from the affiliated organizations drop-down list. We will leave the <b>Maximum enrollments</b> and <b>Add Attributes</b> fields blank.
@@ -116,7 +116,7 @@ Al terminar sabrás:
 
 
 
-* #### Create the orderer organization MSP definition
+ #### Create the orderer organization MSP definition
   - Navigate to the <b>Organizations</b> tab in the left navigation and click <b>Create MSP definition</b>.
   - Enter the <b>MSP Display name</b> as `Orderer MSP` and an <b>MSP ID</b> of `orderermsp`.
   - Under <b>Root Certificate Authority</b> details, specify the peer CA that we created `Orderer CA` as the root CA for the organization.
@@ -124,7 +124,7 @@ Al terminar sabrás:
   - Click the <b>Generate</b> button to enroll this identity as the admin of your organization and export the identity to the wallet. Click <b>Export</b> to export the admin certificates to your file system. Finally click <b>Create MSP definition</b>.
 
 
-* #### Create an orderer
+ #### Create an orderer
   - On the <b>Nodes</b> page, click <b>Add orderer</b>.
   - Click <b>IBM Cloud</b> and proceed with <b>Next</b>.
   - Give your peer a <b>Display name</b> of `Orderer`.
@@ -135,7 +135,7 @@ Al terminar sabrás:
 
 
 
-* #### Add organization as Consortium Member on the orderer to transact
+ #### Add organization as Consortium Member on the orderer to transact
   - Navigate to the <b>Nodes</b> tab, and click on the <b>Orderer</b> that we created.
   - Under <b>Consortium Members</b>, click <b>Add organization</b>.
   - From the drop-down list, select `Org1 MSP`, as this is the MSP that represents the peer's organization org1.
@@ -145,8 +145,7 @@ Al terminar sabrás:
 
 ### Create and join channel
 
-* #### Create the channel
-  - Navigate to the <b>Channels</b> tab in the left navigation.
+ #### Create the channel  - Navigate to the <b>Channels</b> tab in the left navigation.
   - Click <b>Create channel</b>.
   - Give the channel a name, `mychannel`.
   - Select the orderer you created, `Orderer` from the orderers drop-down list.
@@ -155,15 +154,9 @@ Al terminar sabrás:
   - Click <b>Add</b> next to your organization. Make your organization an <b>Operator</b>.
   - Click <b>Create</b>.
 
-* #### Join your peer to the channel
+ #### Join your peer to the channel
   - Click <b>Join channel</b> to launch the side panels.
   - Select your `Orderer` and click <b>Next</b>.
   - Enter the name of the channel you just created. `mychannel` and click <b>Next</b>.
   - Select which peers you want to join the channel, click `Peer Org1` .
-  - Click <b>Submit</b>.
-=======
-1. Crea
->>>>>>> a4d6f95dafd4584dca3cd2d5de9612f567a7ebfe
-
-
 
