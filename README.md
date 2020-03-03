@@ -87,11 +87,11 @@ Al terminar sabrás:
 
 
 
- #### Create a peer
-  - On the <b>Nodes</b> page, click <b>Add peer</b>.
-  - Click <b>IBM Cloud</b> under Create a new peer and <b>Next</b>.
-  - Give your peer a <b>Display name</b> of `Peer Org1`.
-  - On the next screen, select `Org1 CA` as your <b>Certificate Authority</b>. Then, give the <b>Enroll ID</b> and <b>Enroll secret</b> for the peer identity that you created for your peer, `peer1`, and `peer1pw`. Then, select the <b>Administrator Certificate (from MSP)</b>, `Org1 MSP`, from the drop-down list and click <b>Next</b>.
+ #### Creamos el peer
+  - En la pestaña de <b>Nodes</b>, click <b>Add peer</b>.
+  - Click <b>IBM Cloud</b> debajo de Create a new peer y <b>Next</b>.
+  - Ponle un <b>Display name</b> of `Peer Org1`.
+  - En la siguiente pantalla, selecciona `Org1 CA` como <b>Certificate Authority</b>. Ahora, give the <b>Enroll ID</b> and <b>Enroll secret</b> for the peer identity that you created for your peer, `peer1`, and `peer1pw`. Then, select the <b>Administrator Certificate (from MSP)</b>, `Org1 MSP`, from the drop-down list and click <b>Next</b>.
   - Give the <b>TLS Enroll ID</b>, `admin`, and <b>TLS Enroll secret</b>, `adminpw`, the same values are the Enroll ID and Enroll secret that you gave when creating the CA.  Leave the <b>TLS CSR hostname</b> blank.
   - The last side panel will ask you to <b>Associate an identity</b> and make it the admin of your peer. Select your peer admin identity `Org1 Admin`.
   - Review the summary and click <b>Submit</b>.
