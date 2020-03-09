@@ -80,20 +80,20 @@ Al terminar sabrás:
 
  #### Crearemos la definicion del MSP de l organización
   - Navega hasta la pestaña <b>Organizations</b> y pincha <b>Create MSP definition</b>.
-  - Enter the <b>MSP Display name</b> as `Org1 MSP` and an <b>MSP ID</b> of `org1msp`.
-  - Under <b>Root Certificate Authority</b> details, specify the peer CA that we created `Org1 CA` as the root CA for the organization.
-  - Give the <b>Enroll ID</b> and <b>Enroll secret</b> for your organization admin, `org1admin` and `org1adminpw`. Then, give the Identity name, `Org1 Admin`.
-  - Click the <b>Generate</b> button to enroll this identity as the admin of your organization and export the identity to the wallet. Click <b>Export</b> to export the admin certificates to your file system. Finally click <b>Create MSP definition</b>.
+  - Introduce <b>MSP Display name</b> `Org1 MSP` y un <b>MSP ID</b> f `org1msp`.
+  - En <b>Root Certificate Authority</b>, especifica la CA que creamos `Org1 CA` como root CA.
+  - Pon el <b>Enroll ID</b> y <b>Enroll secret</b> de tu administrador de la organización, `org1admin` and `org1adminpw`. Y ponle el Identity name, `Org1 Admin`.
+  - Haga click en el botón <b>Generate</b> para enrolar esta identidad como administradora de la organización y exporta esta identidad a tu cartera. Haga click en <b>Export</b> para exportar los certificados a tu máquina local (b>Importante:<b> este paso es importante pues si el administrador quisiese operar la red desde otra máquina deberá importar este archivo). Por último haga click en <b>Create MSP definition</b>.
 
 
 
  #### Creamos el peer
-  - En la pestaña de <b>Nodes</b>, click <b>Add peer</b>.
-  - Click <b>IBM Cloud</b> debajo de Create a new peer y <b>Next</b>.
-  - Ponle un <b>Display name</b> of `Peer Org1`.
-  - En la siguiente pantalla, selecciona `Org1 CA` como <b>Certificate Authority</b>. Ahora, give the <b>Enroll ID</b> and <b>Enroll secret</b> for the peer identity that you created for your peer, `peer1`, and `peer1pw`. Then, select the <b>Administrator Certificate (from MSP)</b>, `Org1 MSP`, from the drop-down list and click <b>Next</b>.
-  - Give the <b>TLS Enroll ID</b>, `admin`, and <b>TLS Enroll secret</b>, `adminpw`, the same values are the Enroll ID and Enroll secret that you gave when creating the CA.  Leave the <b>TLS CSR hostname</b> blank.
-  - The last side panel will ask you to <b>Associate an identity</b> and make it the admin of your peer. Select your peer admin identity `Org1 Admin`.
+  - En la pestaña de <b>Nodes</b>, haga click en <b>Add peer</b>.
+  - Haga click <b>IBM Cloud</b> debajo de Create a new peer y <b>Next</b>.
+  - Ponle un <b>Display name</b> `Peer Org1`.
+  - En la siguiente pantalla, selecciona `Org1 CA` como <b>Certificate Authority</b>. Ahora, pon el  <b>Enroll ID</b> y el <b>Enroll secret</b> para la identidad peer que creamos, `peer1`, and `peer1pw`. Ahora, selecciona el <b>Administrator Certificate (from MSP)</b>, `Org1 MSP`, de la lista y haga click en <b>Next</b>.
+  - Introduce el <b>TLS Enroll ID</b>, `admin`, y el <b>TLS Enroll secret</b>, `adminpw`.
+  - La última pantalla te pedirá The last side panel will ask you to <b>Associate an identity</b> and make it the admin of your peer. Select your peer admin identity `Org1 Admin`.
   - Review the summary and click <b>Submit</b>.
 
 
@@ -116,7 +116,7 @@ Al terminar sabrás:
 
 
 
- #### Create the orderer organization MSP definition
+ #### Crea la odefinición MSP de la organización del orderer
   - Navigate to the <b>Organizations</b> tab in the left navigation and click <b>Create MSP definition</b>.
   - Enter the <b>MSP Display name</b> as `Orderer MSP` and an <b>MSP ID</b> of `orderermsp`.
   - Under <b>Root Certificate Authority</b> details, specify the peer CA that we created `Orderer CA` as the root CA for the organization.
@@ -124,7 +124,7 @@ Al terminar sabrás:
   - Click the <b>Generate</b> button to enroll this identity as the admin of your organization and export the identity to the wallet. Click <b>Export</b> to export the admin certificates to your file system. Finally click <b>Create MSP definition</b>.
 
 
- #### Create an orderer
+ #### Crea en nodo Orderer
   - On the <b>Nodes</b> page, click <b>Add orderer</b>.
   - Click <b>IBM Cloud</b> and proceed with <b>Next</b>.
   - Give your peer a <b>Display name</b> of `Orderer`.
@@ -143,9 +143,9 @@ Al terminar sabrás:
 
 
 
-### Create and join channel
+### Crea y unete a un canal
 
- #### Create the channel  - Navigate to the <b>Channels</b> tab in the left navigation.
+ #### Crea el canal  - Navigate to the <b>Channels</b> tab in the left navigation.
   - Click <b>Create channel</b>.
   - Give the channel a name, `mychannel`.
   - Select the orderer you created, `Orderer` from the orderers drop-down list.
